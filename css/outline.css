@@ -1,0 +1,26 @@
+
+
+.a{
+    border: 2px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 4px;
+}
+
+.b{
+    border: 5px solid red;
+    outline-style: solid;
+    outline-color: yellow;
+}
+.c{
+    border: 2px solid green;
+    outline-style: solid;
+    outline-color: black;
+    outline-offset: 5px;
+}
+.d{
+    border: 2px solid blue;
+    outline-style: inset;
+    outline-color: black;
+    outline-width: 3px;
+}

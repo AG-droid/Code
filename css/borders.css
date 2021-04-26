@@ -1,0 +1,19 @@
+.firstboder{
+    border-style: dotted;
+}
+.secondborder{
+    border-style: dashed;
+}
+.thirdborder{
+    border-style:solid;
+}
+.forthborder{
+    border-style:double;
+}
+.fifthborder{
+    border-style:groove;
+}
+
+.sixthborder{
+    border-style:ridge;
+}
