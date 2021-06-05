@@ -1,0 +1,751 @@
+<html>
+    <head lang="eng">
+        <title>
+            Anmol Goyal's Portfolio
+        </title>
+
+        <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+        <link rel="icon" href="favicon (1).ico" type="image/x-icon">
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <script>
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 1500;
+        function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+        </script>
+
+<script language="JavaScript">
+    $(document).bind("contextmenu",function(e) {
+     e.preventDefault();
+    });
+    $(document).keydown(function(e){
+        if(e.ctrlKey && (e.which === 83)){
+           e.preventDefault();
+           return false;
+        }
+    });
+    </script>
+    <script>
+        /* To Disable Inspect Element */
+        $(document).bind("contextmenu",function(e) {
+         e.preventDefault();
+        });
+        
+        $(document).keydown(function(e){
+            if(e.which === 123){
+               return false;
+            }
+        });
+        </script>
+
+<script>
+    document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+    return false;
+    }
+    }
+    </script>
+
+
+        <style>
+
+
+            html,body {
+margin:0;
+padding:0;
+overflow-x:hidden;
+}
+            html{
+                scroll-behavior: smooth
+            }
+            #style1{
+                height:10px;
+                width:80%;
+                background-color:dodgerblue; 
+                text-align: left; 
+                margin: 0;
+            }
+            #style2{
+                height:10px;
+                width:20%;
+                background-color:dodgerblue; 
+                text-align: center; 
+                margin: 0;
+            }
+
+
+@use postcss-simple-vars;
+@use postcss-nested;
+@import 'https://fonts.googleapis.com/css?family=Lora:400,700';
+$underlineColor: #0275d8;
+$underlineHeight: 5%;
+            
+           
+
+
+#style1{
+                height:10px;
+                width:80%;
+                background-color:dodgerblue; 
+                text-align: left; 
+                margin: 0;
+            }
+            #style2{
+                height:10px;
+                width:20%;
+                background-color:dodgerblue; 
+                text-align: center; 
+                margin: 0;
+            }
+ 
+  .link-1 {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 1px;
+  transition: color ease 0.3s;
+    color: black;
+
+ 
+
+  
+ 
+}
+
+a:hover{
+    color: #0275d8;
+
+}
+  
+  /* selected link */
+
+.card1{
+    height:auto; 
+    text-align: center;
+     background-color:  #0A0A0A; 
+     padding-top: 1%;
+      margin-top: 10%; 
+      border: 5px solid white;
+}
+  
+
+  .card:hover{
+
+     transform: scale(1.05);
+     
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  transition: all .4s ease;
+-webkit-transition: all .4s ease;
+    
+
+}
+
+.text{
+    color: white;
+}
+
+
+  #main {position: fixed;
+bottom: 1vh;
+right: 1vh;
+        width: 60px; 
+        height: 60px; } 
+   #main:hover{
+       background-color: white;
+   }  
+
+   
+   .img-1{
+    height:30%;
+     width:30%;
+    margin: 5px 10px 10px;
+    float: left;
+
+
+   }
+
+   .cert-h{
+    color: white;
+     text-align: center;
+      font-size: 5.5vw;
+   }
+   
+   .space-inv{
+    height: auto; 
+    text-align:center;
+
+   }
+
+   .dino{
+    height: auto; 
+    text-align:center;
+     margin-right: 25%; 
+     margin-left: 7%;
+
+   }
+   
+
+@media only screen and (min-width: 823px){
+   .active{
+       padding-top: 30;
+
+   }
+}
+  
+@media only screen and (max-width: 823px) {
+       .img-1{
+           width: 60%;
+           height: 25% ;
+           float: center;
+           margin-left: 15%;
+       }
+
+       .cert-h{
+
+        text-align: center;
+        font-size: 50px;
+       }
+       .card1{
+    size: 60%; 
+    text-align: center;
+     background-color:  #0A0A0A; 
+     padding-top: 1%;
+      margin-top: 10%; 
+      border: 5px solid white;
+}
+.space-inv{
+       height: 80%;
+       width: 45%;
+       margin-top: 2%;
+       margin-left: 30%;
+   }
+
+   .dino{
+        
+        margin-bottom: 2%;
+       margin-left: 30%;
+   }
+
+
+   nav ul{
+       text-align: start;
+   }
+
+   .active{
+       border-bottom: #0275d8 2px;
+   }
+       
+   }
+
+   .menu1 {
+  font-size: 25;
+  position: relative;
+  color: white;
+  
+}
+
+.menu1::after {
+  position: absolute;
+  bottom: 35;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  color: transparent;
+  width: 0%;
+  content: '.';
+  height: 3px;
+  transition: 0.5s;
+}
+.menu1:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.menu1:active{
+    bottom: 0;
+}
+
+
+
+
+.menu2 {
+  font-size: 25;
+  position: relative;
+ 
+}
+.menu2:hover {
+  color: #0275d8;
+}
+
+.menu2::after {
+  position: absolute;
+  bottom: 35;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #0275d8;
+  color: transparent;
+  width: 0%;
+  content: '.';
+  height: 3px;
+  transition: 0.5s;
+}
+.menu2:hover::after{
+  width: 100%;
+  transition: 0.5s;
+  background-color: #0275d8;
+  
+    
+}
+.modal-header {
+    border-bottom: 0 none;
+}
+
+.modal-footer {
+    border-top: 0 none;
+}
+
+
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: whitesmoke;
+
+  position: absolute;
+top: 48%;
+left: 48%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #0275d8;
+z-index: 999999;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+
+
+
+
+
+
+   
+
+</style>
+
+
+    </head>
+
+
+
+
+    <body style='background-color:whitesmoke;' data-spy="scroll" data-target=".navbar" data-offset="50" class="preload ">
+        
+
+        <nav class="navbar navbar-expand-sm navbar-dark  fixed-top" style="transition: 1.3s;">
+
+            <a class='navbar-brand' href="#home" style="font-size: 30;">Anmol Goyal's Portfolio</a>
+            <button class=" btn navbar-toggler navbar-toggler-right" type='button' data-toggle="collapse" data-target="#collapsenavbar" style="transition: 0.4s ease; color: white; float: right;"aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+               <img src="icon-1.jpeg" height="30px" style="float: right;">
+            </button>
+            <ul class="nav justify-content-end navbar-nav ml-auto" style="text-align: end; font-size: 20;" id="collapsenavbar">
+                <li class="nav-item menu1">
+                    <a class="nav-link " href="#home" style="transition: 0.5s ease;" >Home</a>
+                </li>
+                <li class="nav-item menu1 ">
+                    <a class="nav-link " href="#about" style="transition: 0.5s ease;">About</a>
+                </li>
+
+                <li class="nav-item menu1">
+                    <a class="nav-link " href="#certifications" style="transition: 0.5s ease;">Certifications</a>
+                </li>
+
+                <li class="nav-item menu1">
+                    <a class="nav-link  " href="#projects" style="transition: 0.5s ease;">Projects</a>
+                </li>
+                <li class="nav-item menu1">
+                    <a class="nav-link" href="#contact" style="transition: 0.5s ease;">Contact</a>
+                </li>
+
+
+                
+            </ul>
+
+        </nav>
+    
+        
+        <div class='row' id="home">
+            
+            <div class='col-sm-12' style="background-image: url('bg-2.jpeg'); background-size: cover; background-attachment: fixed; height: auto;" >
+                <div class="container">
+                    
+                    <h1 class="display-2" style="color: white; padding-top: 40%; text-align: center; font-size: 5vw;">My name is Anmol Goyal</h1>
+                    <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: whitesmoke; font-size: 4vw; text-align: center;padding-top: 50px;">I   am  a</h2>
+
+
+                    <h2 style="color: whitesmoke;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 4vw; text-align: center;padding-top: 90px;"><strike>Student</strike></h2>
+                    <h2 style="color: whitesmoke;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 4vw; text-align: center;padding-top: 90px;"><strike>Developer</strike></h2>
+                    <h2 style="color: whitesmoke;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 4vw; text-align: center;padding-top: 90px; padding-bottom: 150px;">Thinker</h2>
+            </div>
+        </div>
+        </div>
+    
+
+<br id="about">
+<br>
+<br>
+<br>
+<br> 
+
+
+        <div class="container shadow" style="margin-top: 2%;">
+           
+            <div class="row" style="background-color: white;" >
+                <div class="col-sm-6" id='div-1'>
+
+                    <p id="about"> <img  src="card.png"  class="rounded img-1"><p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: larger;">
+                         
+                        <strong><span class="title-s" >Education:</span></strong><span> Highschool</span></p>
+                     
+                        <p><strong><span class="title-s">Institution:</span></strong> <span>GDGPS Gurgaon</span></GDGPS></p></p>
+
+<p style="font-size: 1vw 1vh;"><strong><span class="title-s">Email:</span> </strong><span><a href='mailto:anmolgoyal2006@gmail.com' class='link-1' style="text-decoration: none;">anmolgoyal2006@gmail.com</a></span></p>
+                    
+<br>
+<br>
+<br>
+<br>
+<h4 style="margin-left:20px">Skills</h4>
+
+<ul style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <li>Python</li>
+    <li>Html</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>BootStrap4</li>
+    <br>
+<hr id="style1">
+
+
+                </div>
+                <div class="col-sm-6" style="padding-bottom: 400px; padding-left: 7%;">
+                    <h3 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">About Me</h3>
+                    <hr id="style1" style="height: 4px; width: 23%;">
+                    <p style="margin-top: 10px;margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: larger;">
+                        Paragraph-1
+                    </p>
+                    <p style="margin-top: 10px;margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: larger;">
+                        Paragraph-2
+                    </p>
+                    <p style="margin-top: 10px;margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: larger;">
+                        Paragraph-3
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class ='col-sm-12'style="background-image: url(books.jpeg);  background-attachment: fixed; background-size: cover; margin-top: 5%;" id="certifications" >
+        <br>
+        <br>
+            <div class="container">
+                <h1 class="display-1 cert-h">Certifications</h1>
+                <div class="row" style="padding-bottom: 100px; ">
+                <div class="p-2 card col-sm-4 card-1" style="height:auto; text-align: center; background-color:  #0A0A0A; padding-top: 1%; margin-top: 10%;border: 5px solid white;">
+                    <img class="card-img-top" src="Certificate1.jpeg" style="width: 100%;">
+                    <div class="card-body">
+                        <h4 class="card-title" style="color: white;">Inter-House Bridge Building Competition</h4>
+                        <p class="card-text" style="color: white;">Some description regarding the certificate</p>
+                        <p style="color: white; font-size: larger;">Click on the button below to Download the certificate</p>
+                
+                        <a href="Certificate1.jpeg" download><button type="button" class="btn btn-outline-light">Download</button></a>
+    
+                </div>
+            </div>
+            <div class="d-flex justify-content-end  mb-3">
+            <div class="card col-sm-4 card1">
+                <img class="card-img-top" src="Certificate2.jpeg" style="width: 100%;">
+                <div class="card-body text" >
+                    <h4 class="card-title">Cyber Security Course Completion</h4>
+                    <p class="card-text">Some description regarding the certificate</p>
+                    <p style="font-size: larger">Click on the button below to Download the certificate</p>
+                    <a href="Certificate2.jpeg" download=""><button type="button" class="btn btn-outline-light">Download</button></a>
+                    </div></div>
+                    </div>
+
+            </div>
+        </div>
+        </div>
+        <br>
+        <br id="projects">
+        <br>
+        <br>
+        <br>
+        <div class="container" style="margin-top:2%;">
+            <h1 class="display-1" style="text-align: center; font-weight: bolder;">Projects</h1>
+            <p style="text-align: center; font-size: larger;">Here are some of my creations</p>
+            <hr align="center" style="border-width: 10; border-color: dodgerblue; width: 200;">
+
+
+
+            <div class="row" style="margin-top: 5%;">
+                <div class=" p-2 d-flex card col-sm-4 justify-content-start shadow dino">
+                    <a href="https://github.com/AG-droid/Projects/blob/master/Dino_Wrld.py">
+                    <img class="card-img-top" src="dino.jpeg" "></a>
+                      <div class="card-body">
+                          <a href="https://github.com/AG-droid/Projects/blob/master/Dino_Wrld.py" style="text-decoration: none; font: bolder;" class="link-1">
+                          <h4 class="card-title"'>Dino Adventure Game</a></h4>
+                          
+                          <p class="card-text">Some Description regarding the project</p>
+                      </div>
+                          
+                      
+                          
+                  </div>
+
+                  
+                <div class="  card col-sm-4  shadow space-inv">
+  
+                  <img class="card-img-top" src="space_invader.jpeg" style="height: auto; width: auto;">
+                    <div class="card-body">
+                        <a href="https://github.com/AG-droid/Projects/blob/master/Dino_Wrld.py" style="text-decoration: none; font: bolder;" class="link-1">
+                        <h4 class="card-title"'>Self built Space invaders Game</a></h4>
+                        
+                        <p class="card-text">Some Description regarding the project</p>
+                    </div>
+                        
+                    
+                        
+                </div>
+
+
+            </div>
+            
+
+                </div>
+                <br id="contact">
+                <br>
+                <br>
+                <br >
+                <br>
+                
+            <div style="background-image: url(form_bg.jpeg); background-size: cover; background-attachment: fixed; background-color: #0275d8;">
+                <div class="mask" style="background-color: rgba(2,117,216, 0.8);">
+                <br>
+                <br>
+                <br>
+
+                <br>
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                    <div class="col-sm-5 pb-lg-4" style="background-color: white;">
+                        <h2>Send me a message</h2>
+                        <hr id="style1" style="height: 2px; width: 23%; margin-left: 1%; ">
+                        <br>
+                        <form id="myForm" action="https://sheetdb.io/api/v1/eao8ocsggjq0a" method="POST">
+                            <div class="form-group">
+                                <input type="text" class="form-control mb-4 mr-sm-2" placeholder=" Full Name" id="Name" name="data[Name]" required>
+                                <input type="email" class="form-control mb-4 mr-sm-2" placeholder=" Your e-mail" id="Email" name='data[Email]' required>
+                                <input type="text" class="form-control mb-4 mr-sm-2" placeholder=" Subject " id="Subject" name="data[Subject]" required>
+                               <pre> <textarea class="form-control mb-4 mr-sm-2" id="Message" rows="3" cols="0.5" placeholder="Message" name="data[Message]" required></textarea></pre>
+                                <button class="btn btn-primary round" type="submit" >Submit</button>
+
+                            </div>
+                        </form>
+                        
+
+                    </div>
+                    <div class="col-sm-5" style="background-color: white; padding-bottom: 10%;">
+                        <h2>Get in touch</h2>
+                        <hr id="style1" style="height: 2px; width: 23%; margin-left: 1%; ">
+                        <br>
+
+                        <p class="text-muted" style="font-size: larger;">To request a CV or for any enquiries please send me a message. If you prefer, you can also directly send me an email. My email address is linked below.</p>
+                        <br>
+                   
+                    
+                        <img src="mail-icon.png" height='35px'>  <a href="mailto:anmolgoyal2006@gmail.com" class="link-1" style="text-decoration: none;"> anmolgoyal2006@gmail.com</a>
+
+                       
+                    </div>
+                    
+                </div>
+                <br>
+                <br>
+                <h4 style="color: white; text-align: center;">Authour: Anmol Goyal</h4>
+                <h4 style="color: white; text-align: center;">Language used: HTML,CSS & JS</h4>
+                <br>
+
+                
+            </div>
+        </div>
+            </div>
+
+
+            <div class='container'>
+
+                <div class='modal fade' id="myModal">
+
+                    <div class='modal-dialog'>
+                        <div class="modal-content bg-primary">
+
+
+                            <div class="modal-title">
+                                <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+                                <img src="tick.png" class="mx-auto my-auto d-block" height="100px" style="padding-top: 10;">
+
+                            </div>
+                            <div class="modal-body" style="text-align: center; color: white;">
+                                <h3>Thank You!</h3>
+                                <h4>You form has been submitted successfully !</h4>
+                              </div>
+
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-light text-primary mx-auto" data-dismiss="modal">Close</button>
+                              </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+        
+        <span title="Wanna Go to the Top?"><a href="#" ><button type="button" class="btn btn-outline-dark rounded-circle" id="main" ><img src="up2.jpeg" height="35px" width="35px"></button></a>
+            
+      
+    </body>
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+        </div>
+    
+    <script>
+         $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                $('nav').removeClass('navbar-dark');
+                  $('nav').addClass('bg-light');
+                  $('nav').addClass('navbar-primary');
+                  $('nav').addClass('shadow-lg');
+                  $('nav li').addClass('menu2');
+                  $('nav li').removeClass('menu1');
+                  $('nav button').addClass('bg-primary');
+                  
+
+            }
+
+            else {
+                  $('nav').removeClass('bg-light');
+                  $('nav').addClass('navbar-dark');
+                  $('nav').removeClass('navbar-primary');
+                  $('nav').removeClass('shadow-lg');
+                  $('nav li').addClass('menu1');
+                  $('nav li').removeClass('menu2');
+                  $('nav button').removeClass('bg-primary');
+
+                  
+                  
+                  
+                  
+
+                 
+
+
+            }
+      })
+
+        var form = document.getElementById('myForm');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("myForm")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            document.getElementById('Name').value='';
+            document.getElementById('Email').value='';
+            document.getElementById('Subject').value='';
+            document.getElementById('Message').value='';
+            
+            $("#myModal").modal();
+          });
+        });
+
+
+        
+      </script>
+      
+
+
+
+</html>
