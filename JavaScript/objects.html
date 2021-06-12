@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            Objects
+        </title>
+        <script>
+            function object1(){
+                data = {
+                    name : 'John Doe',
+                    age : '26',
+                    job : 'System architecture',
+                    comp : 'Microsoft'
+                }
+                alert("Hi, my name is "+ data.name + ' and i am ' + data.age + ' and i work as a ' + data.job + ' at ' + data.comp)
+            }
+
+            function obj2(){
+                function test(id, name, salary){
+                this.id = id;
+                this.name = name;
+                this.salary = salary;
+                
+            }
+            e = new test(103, 'John Doe', '$5000')
+            document.write(e.id, e.name, e.salary)
+
+        }
+        </script>
+<body>
+    <h1>
+        There are 3 methods to use objects in html and they are very similar to dictionaries in python
+    </h1>
+    <br>
+    <br>
+    <br>
+    <ul>
+        <li>
+            <h3>
+                You can see  the usage of the first method of object with the help of the button given below
+            </h3>
+            <input type="button" onclick="object1()" value="Click Here !">
+        </li>
+        <li>
+            <h3>
+                You can see  the usage of the second method of object with the help of the button given below
+            </h3>
+            <input type="button" onclick="obj2()" value="Click Here !">
+        </li>
+    </ul>
+
+</body>
+        
+    </head>
+</html>

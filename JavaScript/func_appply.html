@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            func.apply()
+        </title>
+    </head>
+    <script>
+        function func1(){
+            var arr = [1,2,3,4,5];
+            var new_arr = [6,7,8,9,10];
+            arr.push.apply(arr,new_arr);
+            var min = Math.min.apply(null, arr);
+            document.write(min);
+        }
+    </script>
+
+    <body>
+        <h1>
+            you can find the example of function.apply() given below
+        </h1>
+        <h3>
+            Click on the button given below to find the smallest number between 1 and 10
+        </h3>
+        <input type="button" onclick="func1()" value="Click here !">
+    </body>
+</html>

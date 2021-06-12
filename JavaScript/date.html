@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Date
+        </title>
+    </head>
+    <script>
+        function test1(){
+            var today = new Date();
+            alert("Today's date and time  is " + today)
+            
+
+        }
+        function test2(){
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth();
+            var year = date.getFullYear();
+
+
+            alert("Date is: "+day+"/"+month+"/"+year);  
+        }
+        function test3(){
+            var t = new Date();
+            var h = t.getHours();
+            var m = t.getMinutes();
+            var s = t.getSeconds();
+
+            alert('Current time : '+h+":"+m+":"+s)
+        }
+
+    </script>
+        <body>
+            <h1>
+                You can also write the latest date with the help of the date module in javascript, You can find an example given below
+            </h1>
+            <input type="button" onclick="test1()" value = 'Click Here !'>
+            
+            <h1>
+                Or if you want date in a more specified manner you can use the button given below
+            </h1>
+            <input type="button" onclick="test2()" value = 'Click Here !'>
+
+            <h1>
+                Or if you want time in a more specified manner you can use the button given below
+            </h1>
+            <input type="button" onclick="test3()" value = 'Click Here !'>
+        </body>
+    
+</html>

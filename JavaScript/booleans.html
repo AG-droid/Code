@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            Boolean
+        </title>
+    </head>
+
+    <script>
+        function test1(){
+            var i = 0;
+            var z = 10;
+
+            while(i <= z){
+                var val = i < z;
+                if(val == true){
+                document.write(i + ' is smaller than ' + z + ' hence it is ' + val + '</br>')
+                }
+                else{
+                    document.write(i + ' is not smaller than ' + z + ' hence it is ' + val + '</br>')
+                }
+                i++
+            }
+        }
+    </script>
+
+    <body>
+        <h1>
+            On this page you can find an example for the usage of booleans (true or false) given below where i will be creating a while loop on the basis of this data type
+        </h1>
+        <input type="button" value="Click here !" onclick="test1()">
+    </body>
+
+</html>
