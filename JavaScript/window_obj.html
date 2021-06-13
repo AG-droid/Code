@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Window Objects 
+        </title>
+    </head>
+
+    <script>
+
+        function test1(){
+            var i = confirm('Welcome to our page , Press the ok button given below to please continue');
+
+            if (i == true){
+            alert('Thank you for choosing to continue  , Press the of button given below to continue');
+            var k = confirm('Now last effect, do you want to see some delay in your next message ?')
+            if (k == true){
+                var num = parseInt(window.prompt('Please enter for how much seconds do you want the next to be delayed for in the field give below.'))
+                var num1 = num * 1000
+                setTimeout(  
+                function(){  
+                alert("this prompt has been delayed by " + num + ' seconds')  
+                },num1);  
+            }
+        }
+        }
+        
+       
+    </script>
+
+    <body>
+        <h1 style="margin-top: 10%;">
+            Today we are going to learn about different window objects that can be used in javascript
+
+        </h1>
+        <h2>
+            You can find some of the examples for the following listed below
+        </h2>
+        <ol>
+            <li>
+                <h3>
+                    click on the button given below to see the first example
+                </h3>
+                <input type="button" value = 'Click on this button' onclick="test1()">
+            </li>
+
+        </ol>
+
+    </body>
+
+</html>
