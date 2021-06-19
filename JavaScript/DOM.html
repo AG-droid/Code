@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+        DOM
+    </title>
+    </head>
+
+    <script>
+        function getcube(){
+            var num = document.getElementById('cube').value;
+
+            if (num == ''){
+                alert('Please enter a value to find the cube of')
+
+            }
+            else{
+                alert(num * num * num)
+            }
+
+            a = confirm('Do you also want to know how many input tags were used in the making of this file ? ')
+
+            if (a == true){
+                d = document.getElementsByTagName('input');
+                alert('total input tags used in the making of this site were : ' + d.length );
+            }
+
+        }
+
+        function square(){
+
+            var h = document.getElementById('num').value;
+            if (num == ''){
+                alert('Please enter a value to find the square of')
+
+            }
+            else{
+                alert(h * h)
+            }
+
+        }
+
+        function show(){
+            var s = "Enter the number here : <input type = 'text' id = 'num' name = 'num'><br> <input type='button' value='Click Me !' onclick = 'square()'> "
+            document.getElementById('Div').innerHTML = s;
+
+        }
+    </script>
+    <body>
+
+        <form>
+         Enter No :    <input type="text" id="cube" name="cube"> </input>
+         <br>
+         <input type="button" value="cube" onclick="getcube()">
+
+        </form>
+        <br>
+        <br>
+        <h3>
+            Click under here to also find the square of any number !
+        </h3>
+        <form name="myForm">
+            <input type="button" value="Click here !" onclick='show()'>
+            <div id='Div'></div>
+        </form>
+
+    </body>
+</html>

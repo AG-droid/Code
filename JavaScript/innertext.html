@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            innertext
+        </title>
+    </head>
+
+    <script>
+
+        function validate(){
+            var msg;
+            if(document.Form.pass.value.length >= 8){
+                msg = 'Good'
+            }
+            else{
+                msg = 'Poor'
+            }
+            document.getElementById('Strength').innerText=msg;  
+        }
+
+    </script>
+
+    <body>
+        <h3>
+            Please fill the form given below to move forward
+        </h3>
+        <form name="Form">
+            <h4> Email : <input type ='email'> </h4>
+            <h4> Password : <input type ='password' name="pass" onkeyup="validate()"> Strength : <span id = 'Strength'>no Strength </span> </h4> 
+
+        </form>
+    </body>
+</html>
