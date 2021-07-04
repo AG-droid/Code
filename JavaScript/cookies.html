@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Cookies
+        </title>
+    </head>
+
+    <script>
+
+        function setCookie(){
+
+            document.cookie = 'username = JohnxDoe';
+        }
+        function getcookie(){
+
+            if (document.cookie.length != 0){
+
+                alert(document.cookie)
+            }
+            else{
+                alert('cookie not available')
+            }
+
+        }
+    </script>
+
+        <body>
+            <input type="button" value="setCookie" onclick="setCookie()">
+            <input type="button" value="getCookie" onclick="getcookie()">
+
+        </body>
+
+    </head>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            Events
+        </title>
+    </head>
+
+    <script>
+
+        function clickevent(){
+
+            window.alert('This is an example for click event')
+        }
+
+        function mouseover(){
+
+            window.alert('Hi, as you can see the mouseover event is working correctly')
+        }
+
+        function focusevent(){
+
+            document.getElementById("input1").style.background='aqua'
+        }
+
+        function keydown_event(){
+
+            document.getElementById('input1')
+            alert('Pressed A key')
+        }
+
+    </script>
+
+    <body>
+
+        <input type="button" onclick='clickevent()' value="Click here , to see the example of click event">
+        <br>
+        <br>
+        <br>
+        <h1 onmouseover="mouseover()" >Hover you mouse over here to see something !</h1>
+        
+        <br>
+        <br>
+        <br>
+        <h3>Write in the form below to see the functioning of the focus event</h3>
+        <input type="text" id="input1" onfocus="focusevent()" onkeydown="keydown_event()"/>
+
+
+    </body>
+
+</html>

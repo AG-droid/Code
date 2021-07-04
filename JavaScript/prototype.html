@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Prototype
+        </title>
+    </head>
+
+    <script>
+        function Employee(firstname, lastname){
+
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+
+        Employee.prototype.fullname=function(){
+
+            return this.firstname+ ' ' + this.lastname
+        }
+
+        var emp1 = new Employee('John' ,'Doe')
+        var emp2 = new Employee('Jane' ,'Doe')
+
+        window.alert(emp1.fullname())
+
+        window.alert(emp2.fullname())
+
+    </script>
+</html>

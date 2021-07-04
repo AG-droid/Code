@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Classes
+        </title>
+    </head>
+
+        <script>
+            //Declaring Class
+
+            class Employee{
+
+                //Initiallizing Class
+
+                constructor(id,name){
+                    this.id=id;
+                    this.name=name;
+
+                }
+
+                //Declaring Method
+
+                detail()
+                {
+                    window.alert(this.id + ' '+ this.name )
+                }
+            }
+            //passing object to a variable
+
+            var e1 = new Employee(101, 'John Doe')
+            var e2 = new Employee(102, 'Jane Doe')
+            //Calling Method from the class
+
+            e1.detail()
+            e2.detail()
+        </script>
+    <body>
+        
+    </body>
+
+</html>

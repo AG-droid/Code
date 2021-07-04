@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Event Listener
+        </title>
+    </head>
+
+
+
+    <body>
+
+        <p>Click the following button to see the example of event listener</p>
+        <button id = 'btn'>Click ME!</button>
+        <p id="para"></p>
+
+    
+    </body>
+    <script>
+        document.getElementById('btn').addEventListener('click', fun);
+
+        function fun(){
+
+            document.getElementById('para').innerHTML = 'Hello     World' + '<br>' + 'Welcome to my site, as you can see our event listner is properly working';
+        }
+    </script>
+
+</html>

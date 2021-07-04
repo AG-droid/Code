@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Inheritance
+        </title>
+    </head>
+    <body>
+        <script>
+
+            class Parent{
+                constructor(brand){
+                    this.car = brand;
+                }
+
+                present(){
+                    window.alert( 'I have a ' , this.car)
+                }
+
+            }
+
+            class Child extends Parent{
+
+                constructor(brand, modal){
+                    super(brand);
+                    this.modal = modal
+                }
+
+                show(){
+
+                    window.alert( this.present(), 'It is a ', this.modal)
+                }
+            }
+
+            let mycar = new Child('Audi', 'R8')
+            mycar.show()
+        </script>
+    </body>
+</html>

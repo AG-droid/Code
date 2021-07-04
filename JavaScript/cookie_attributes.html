@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Cookie Attributes
+        </title>
+
+    </head>
+
+    <body>
+        <input type="button" value="setCookie" onclick="setCookie()">  
+<input type="button" value="getCookie" onclick="getCookie()">  
+        <script>
+
+            function setCookie(){
+
+                document.cookie('Username=Duke MArtin; max-age = (10)')
+            }
+
+            function getCookie(){
+
+                if(document.cookie.length!=0){
+
+                    var array = document.cookie.split('=')
+                    alert('Name=' +array[0]+ '  Value='+ array[1])
+                }
+                else{
+                    alert('Cookies Not Available')
+                }
+            }
+
+        </script>
+    </body>
+
+</html>
