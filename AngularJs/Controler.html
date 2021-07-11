@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Controller
+        </title>
+        
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+
+        <div ng-app="myApp" ng-controller="myCtrl">
+             {{num1 * num2}}
+        </div>
+
+
+        <script>
+        var app = angular.module('myApp', []);
+
+        app.controller('myCtrl', function($scope){
+
+            $scope.num1 = window.prompt('Please enter the first number you want to find the product of .')
+            $scope.num2 = window.prompt('Please enter the number you want ' + $scope.num1 + ' to multiply with')
+           
+        })
+        </script>
+
+    </body>
+
+</html>

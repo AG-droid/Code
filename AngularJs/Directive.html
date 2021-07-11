@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Directives 
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body>
+        <div ng-app='Test' my-test-directive>
+
+        </div>
+        <script>
+
+            var app = angular.module('Test', [])
+            app.directive('my-test-directive', function(){
+
+                return {
+
+                    template : 'This message was directly written from the3 script portion of the code '
+                };
+            });
+        </script>
+    </body>
+    </html>
+
