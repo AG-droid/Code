@@ -1,0 +1,48 @@
+html>
+    <head>
+        <title>
+            Test 1
+        </title>
+    </head>
+
+    <script>
+
+        var a = window.prompt(' Please choose any of the numbers from 1 to 3')
+        
+
+        function check(){
+
+        
+           var b = parseInt(a)
+            var ans;
+           switch(b){
+            
+            case '':
+           ans = 'Please do not leave the form empty'
+            break;
+            case 1:
+            ans = 'It looks like you chose the option 1, well if u did then sorry this is not your lucky day as u sadly lost the game ;-;'
+            break;
+            case 2:
+           ans = 'It looks like you chose the option 2, well if u did then sorry this is not your lucky day as u sadly lost the game ;-;'
+           break;
+            case 3:
+           ans =  "OH it looks like you chose the right number, congratulations you are the winner for our today's game. "
+           }
+           window.alert(ans)
+           
+        }
+
+    </script>
+
+    <body>
+
+        <h1>Welcome to our today's quizz, and the topic for our today's game is random numbers , As you know when you entered this site , you entered a random number between 1 to 3, and that random number here will decide your fate ! </h1>
+        <br>
+        <br>
+        <h2>Click the button below to see what the future beholds for you</h2>
+        <input type="button" value="click me! " onclick="check()">
+
+    </body>
+
+</html>

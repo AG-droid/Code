@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Array
+        </title>
+    </head>
+
+    <script>
+        function test(){
+
+            var ar = []
+
+            var k = window.prompt('How many friends do you have ? ')
+            var z = parseInt(k)
+            for(i = 1; i <= z; i++){
+
+                ar[i] = window.prompt('Please enter the name of your friend no. '+ i)
+            }
+
+            var ask = window.confirm('Do you want to see the names of all of you friends ?')
+
+            if(ask==true){
+
+                for (i=1;i<ar.length;i++){  
+                document.write(ar[i] + "<br>");  
+}  
+            }
+
+        }
+    </script>
+
+    <body>
+
+        <h1>
+            Welcome to the friend lister, click on the button below to commence the process.
+        </h1>
+        <input type="button" value="click me! " onclick="test()">
+    </body>
+
+</html>
