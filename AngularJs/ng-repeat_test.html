@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Ng-repeat test
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="myAPP" ng-controller="Ctrl">
+
+            <ul ng-repeat='x in names'>
+                <li>{{x}}</li>
+            </ul>
+        </div>
+
+        <script>
+            var app = angular.module('myAPP', [])
+            app.controller('Ctrl', function($scope){
+
+                $scope.names = ['James','Charles','Katherin','Michael']
+            })
+        </script>
+
+    </body>
+</html>

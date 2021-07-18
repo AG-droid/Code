@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Angular JS Controller
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body>
+
+        <div ng-app='newApp' ng-controller='Ctrl'>
+            <h1 ng-click='changeName()' >{{firstname}}</h1>
+        </div>
+
+        <script>
+
+            var app = angular.module('newApp', [])
+            app.controller('Ctrl', function($scope){
+
+                $scope.firstname = 'John'
+                $scope.changeName = function(){
+
+                    $scope.firstname = 'Jane'
+                }
+            })
+        </script>
+
+    </body>
+
+</html>

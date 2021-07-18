@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            NG-Model
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body>
+
+        <div ng-app='myApp' ng-controller='myCtrl'>
+            Name: <input ng-model="name">
+            <h1> The name you wrote is : {{name}}</h1>
+        </div>
+
+
+
+        <script>
+            var app = angular.module('myApp', [])
+
+            app.controller('myCtrl', function($scope){
+
+                $scope.name = 'John Doe'
+            })
+        </script>
+
+    </body>
+
+</html>
