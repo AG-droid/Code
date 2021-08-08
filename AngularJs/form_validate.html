@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            ƒorm validation
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+    </head>
+
+
+    <style>
+        input.ng-valid{
+            background-color: green;
+        }
+        input.ng-invalid{
+            background-color: red
+        }
+    </style>
+
+    <body ng-app="">
+        <p>Form validation example 1 :-</p>
+        <form name="myForm">
+            <input name='myInput' ng-model="myInput" type='email'>
+        </form>
+        <p>The input's validity is :-</p>
+        <p>{{myForm.myInput.$valid}}</p>
+
+
+        <p>Form validation example 2 :-</p>
+        <form name="myForm2">
+            <input name='myInput2' ng-model="myInput2" type='email'>
+        </form>
+        <span ng-show=' myForm2.myInput2.$invalid'>Please fill in the required details over here</span>
+
+
+
+        <br>
+        <br>
+       
+
+    </body>
+
+</html>

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            Forms 
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body ng-app="">
+        
+        <h1>Radio Buttons</h1>
+        <form>
+            <input type="radio" ng-model="Var" value="Cat">Cat
+            <input type="radio" ng-model="Var" value="Dog">Dog
+            <input type="radio" ng-model="Var" value="Mouse">Mouse
+        </form>
+        <div ng-switch="Var">
+        <div ng-switch-when="Cat">
+            <h2>Cats</h2>
+            <p>Cats are a fascinating Creature</p>
+        </div>
+        <div ng-switch-when="Dog">
+            <h2>Dog</h2>
+            <p>Dogs are a fascinating Creature</p>
+        </div>
+        <div ng-switch-when="Mouse">
+            <h2>Cats</h2>
+            <p>Mouse are a fascinating Creature</p>
+        </div>
+    </div>
+
+
+
+
+    <h1>Radio Buttons</h1>
+        <form>
+            <select ng-model="Var2">
+            <option value="">
+            <option value="Cat">Cat
+            <option value="Dog">Dog
+            <option  value="Mouse">Mouse
+        </select>
+        </form>
+        <div ng-switch="Var2">
+        <div ng-switch-when="Cat">
+            <h2>Cats</h2>
+            <p>Cats are a fascinating Creature</p>
+        </div>
+        <div ng-switch-when="Dog">
+            <h2>Dog</h2>
+            <p>Dogs are a fascinating Creature</p>
+        </div>
+        <div ng-switch-when="Mouse">
+            <h2>Cats</h2>
+            <p>Mouse are a fascinating Creature</p>
+        </div>
+    </div>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Filter_test
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="MyApp" ng-controller="Ctrl">
+            <p>Enter the initilials of the name you are looking for : <input type='text' ng-model="test"> </p>
+
+            <ul ng-repeat="x in names | filter :test">
+                <li>{{x}}</li>
+            </ul>
+
+        </div>
+        
+        <script src='modul.js' type='text/javascript'></script>
+        <script src = 'names.js' type='text/javascript'></script>
+
+    </body>
+
+</html>

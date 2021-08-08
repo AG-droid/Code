@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            DOM
+        </title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+
+    <body>
+
+        <div ng-app="" ng-init="mySwitch = true">
+            <p>
+                <button ng-disabled="mySwitch" type="button" >Click me !</button>
+            </p>
+                <p><input type='checkbox' ng-model="mySwitch"></p>
+
+            <p ng-hide="mySwitch" >This para is also controlled by this checkbox</p>
+                <p>
+                    {{mySwitch}}
+                </p>
+         
+
+        </div>
+
+
+    </body>
+
+</html>
