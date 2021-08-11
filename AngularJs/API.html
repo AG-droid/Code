@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            API in Angular JS 
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+    <body>
+        <h1>Angular JS offers many different forms of API for your help, you find the examples of some under here .</h1>
+        <div ng-app="MyApp" ng-controller="Ctrl">
+            <h2>Under here you can find an example of angular.uppercase() API</h2>
+            <p>this text as you can see is written in lower caps ----> {{x1}} </p>
+            <p>Same text written in Upper caps with the help of angular API -----> {{x2}} </p>
+            <br>
+            <br>
+            <h2>Under here you can find an example for the angular.lowercase() API</h2>
+            <p>this text as you can see is written in Upper caps ----> {{y1}} </p>
+            <p>Same text written in lower caps with the help of angular API -----> {{y2}} </p>
+            <br>
+            <br>
+            <h2>Under here we can see an example of one of the Checking API</h2>
+            <p>{{z1}}</p>
+            <p>Is the text given above an string -----> {{z2}} </p>
+            <br>
+            <br>
+            <h2>Another Example of one of the Checking API is angular.isNumber() API</h2>
+            <p>{{num}}</p>
+            <p>Is the above text a number --> {{num_chckr}}</p>
+
+        </div>
+
+
+        <script>
+            var app = angular.module('MyApp', [])
+            app.controller('Ctrl', function($scope){
+                $scope.x1 = 'my name is john'
+                $scope.x2 = angular.uppercase($scope.x1)
+                $scope.y1 = 'THIS IS A SAMPLE TEXT'
+                $scope.y2 = angular.lowercase($scope.y1)
+                $scope.z1 = 'This is a string'
+                $scope.z2 = angular.isString($scope.z1)
+                $scope.num = 1234556789
+                $scope.num_chckr = angular.isNumber($scope.num)
+            })
+        </script>
+    </body>
+</html>
