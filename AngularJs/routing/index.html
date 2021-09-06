@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            Routing
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+    </head>
+
+    <body ng-app="MyApp">
+
+        <p><a href='#/!'>Main</a></p>
+
+        <a href='#!red'>Red</a>
+        <a href='#!green'>Green</a>
+        <a href='#blue'>Blue</a>
+
+        <div ng-view></div>
+
+        <script>
+            var app = angular.module('MyApp', ['ngRoute']);
+            app.config(function($routeProvider) {
+                $routeProvider
+                .when('/',{
+                    templateUrl: 'main.html'
+                })
+                .when('/red',{
+                    templateUrl: 'red.html'
+
+                })
+                .when('/green',{
+                    templateUrl: 'green.html'
+                    
+                })
+                .when('/red',{
+                    templateUrl: 'blue.html'
+                    
+                })
+            })
+        </script>
+
+    </body>
+
+</html>

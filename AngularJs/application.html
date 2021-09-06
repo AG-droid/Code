@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Application </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <script>
+            var app = angular.module('myList',[])
+            app.controller('Ctrl',function($scope){
+                $scope.products = ['Bread','Milk','Cheese']
+                $scope.addItem = function(){
+                    $scope.products.push($scope.addmE);
+                }
+                $scope.rmv = function(x){
+                    $scope.products.splice(x,1)
+                }
+            })
+        </script>
+        <div ng-app='myList' ng-controller='Ctrl'>
+            <div class="row">
+                <div class="col-sm-4 m-5">
+        
+            <table class="table  table-sm table-hover " style="text-align: left;">
+
+                <thead class="text-light thead-light">
+                    <tr>
+                        <th><h3>My Shopping List</h3></th>
+                        <th>  </th>
+                  
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr ng-repeat='x in products'>
+                        <td>{{x}}</td>
+                        <td>
+                            <button type="submit" ng-click='rmv($index)' class="btn btn-outline-dark">&times</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input placeholder="Add items here" ng-model="addmE">
+            <button class="btn btn-outline-success" ng-click="addItem()">Add</button></div>
+            
+        </div>
+            
+        </div>
+    </body>
+</html>
+
+
+<htm
