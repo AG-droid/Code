@@ -1,7 +1,7 @@
-class Inheritance2{
+class Programmer{
     float salary = 400000;
 }
-class Programmer extends Inheritance2{
+class Inheritance2 extends Programmer{
 
     int bonus = 10000;
 
@@ -9,7 +9,7 @@ class Programmer extends Inheritance2{
 
 public static void main(String[] args){
 
-    Programmer p = new Programmer();
+    Inheritance2 p = new Inheritance2();
     System.out.println("The salary of a programmer is $ "+ p.salary);
     System.out.println("The bonus of a programmer is $ "+ p.bonus);
 
