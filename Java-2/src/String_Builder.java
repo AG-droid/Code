@@ -2,6 +2,12 @@ package String_Builder;
 
 
 
+
+
+
+
+
+
 class reverse{
 
     void run(){
@@ -34,7 +40,7 @@ class replace{
 
 class delete{
 
-    void run(){
+    void run(){   
         StringBuilder s = new StringBuilder("Gustav");
         s.delete(0,5);
         System.out.println(s);
@@ -75,3 +81,8 @@ class Caller{
 
     }
 }
+
+
+
+
+
