@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 class ATM{
-    int amt = 1000;
+    float amt = 1000;
 
 
     void request(){
@@ -51,8 +51,7 @@ class ATM{
         System.out.println("Welcome to the SBS banking deposit systems :)");
         Scanner myObj = new Scanner(System.in);
         System.out.println("Please enter the amount you would like to deposit.");
-        int dep = myObj.nextInt();
-        amt += dep;
+        float dep = myObj.nextInt();
         System.out.println("The total amount of "+ dep + " has been succesfully deposited into your account !");
         balance();
         request();
@@ -68,7 +67,7 @@ class ATM{
         System.out.println("Welcome to the SBS banking withdrawel systems ");
         Scanner myObj = new Scanner(System.in);
         System.out.println("Please enter the amount you would like to withdraw from your account");
-        int with = myObj.nextInt();
+        float with = myObj.nextInt();
 
         if(with <= amt){
             amt -= with;
