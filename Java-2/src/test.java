@@ -2,21 +2,25 @@ package test;
 
 
 
-class Game{
 
-    void ask(){
-        System.out.println("Welcome to the game sir");
+class Dino{
 
+    void Test(){
 
+        System.out.println("THis is a  test message ");
     }
+
 }
+
+
 
 
 class Caller{
 
     public static void main(String args[]){
 
-        Game g = new Game();
-        g.ask();
+        Dino d = new Dino();
+        d.test();
+
     }
 }
